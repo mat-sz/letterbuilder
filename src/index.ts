@@ -1,5 +1,10 @@
 import { fromByteArray } from 'base64-js';
 
+if (typeof TextEncoder === 'undefined') {
+  // @ts-ignore Isomorphism.
+  global['TextEncoder'] = require('util').TextEncoder;
+}
+
 export interface LetterbuilderMail {
   subject?: string;
   to?: string[];
