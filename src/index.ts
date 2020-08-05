@@ -71,9 +71,8 @@ export function build(mail: LetterbuilderMail): string {
     output += 'Subject: ' + buildHeaderValue(mail.subject) + '\n';
   }
 
-  if (mail.date) {
-    output += 'Date: ' + mail.date.toUTCString() + '\n';
-  }
+  const date = mail.date || new Date();
+  output += 'Date: ' + date.toUTCString() + '\n';
 
   if (mail.html && mail.text) {
     const boundary = randomString(16);
