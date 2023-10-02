@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-<img alt="workflow" src="https://img.shields.io/github/workflow/status/mat-sz/letterbuilder/Node.js%20CI%20(yarn)">
+<img alt="workflow" src="https://img.shields.io/github/actions/workflow/status/mat-sz/letterbuilder/node.js.yml?branch=master">
 <a href="https://npmjs.com/package/letterbuilder">
 <img alt="npm" src="https://img.shields.io/npm/v/letterbuilder">
 <img alt="npm" src="https://img.shields.io/npm/dw/letterbuilder">
@@ -13,9 +13,9 @@
 
 **letterbuilder** is a library created for building RFC 5322 compliant e-mail messages. The library is written in TypeScript, fully supports both browser and server environments.
 
-| Parser                                                 | Inbound SMTP                                   |
-| ------------------------------------------------------ | ---------------------------------------------- |
-| [letterparser](https://github.com/mat-sz/letterparser) | [microMTA](https://github.com/mat-sz/microMTA) |
+| Parser                                                 | SMTP client/server                                 |
+| ------------------------------------------------------ | -------------------------------------------------- |
+| [letterparser](https://github.com/mat-sz/letterparser) | [@typemail/smtp](https://github.com/typemail/smtp) |
 
 ## Usage
 
